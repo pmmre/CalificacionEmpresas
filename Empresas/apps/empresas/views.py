@@ -76,8 +76,7 @@ class calificar(ListView):
 				else:
 					salida="La calificacion debe de estar entre 0 y 10."
 			else:
-				salida="La empresa "+nombre_empresa+" ya ha sido calificada"
-			
+				salida="La empresa "+nombre_empresa+" ya ha sido calificada"			
 		else:
 			salida="La empresa "+nombre_empresa+" no existe."
 
