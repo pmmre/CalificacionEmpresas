@@ -130,6 +130,6 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-STATICFILES_DIRS = (
-	RUTA_PROYECTO.child('static'),
-)
+#STATICFILES_DIRS = (
+#	RUTA_PROYECTO.child('static'),
+#)
