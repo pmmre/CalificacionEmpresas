@@ -106,8 +106,8 @@ DATABASES = {
         'NAME': 'myproject',
         'USER': 'pablo',
         'PASSWORD': 'qwe',
-        'HOST': '',
-        'PORT': '',
+        'HOST': 'localhost',
+        'PORT': '5432',
     }
 }
 
