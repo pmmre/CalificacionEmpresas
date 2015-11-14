@@ -18,7 +18,7 @@ import dj_database_url
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
  
 # Allow all host headers
-ALLOWED_HOSTS = ['*']
+#ALLOWED_HOSTS = ['*']
  
 # Static asset configuration
 #BASE_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -44,7 +44,7 @@ DEBUG = True
 from unipath import Path
 RUTA_PROYECTO = Path(__file__).ancestor(2)
 
-#ALLOWED_HOSTS = []
+ALLOWED_HOSTS = []
 
 
 # Application definition
