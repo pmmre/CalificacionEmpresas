@@ -19,13 +19,13 @@ SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
  
 # Allow all host headers
 #ALLOWED_HOSTS = ['*']
- 
+import os
 # Static asset configuration
 #BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
-import os
+
 
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -43,7 +43,7 @@ DEBUG = True
 from unipath import Path
 RUTA_PROYECTO = Path(__file__).ancestor(2)
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
