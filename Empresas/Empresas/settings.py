@@ -107,12 +107,13 @@ DATABASES = {
         'NAME': 'myproject',
         'USER': 'pablo',
         'PASSWORD': 'qwe',
-        'HOST': '\*',
-        'PORT': '5432',
+        'HOST': '',
+        'PORT': '',
     }
 }
 """
-DATABASES = {'default' : dj_database_url.config() } 
+DATABASES = {'default': dj_database_url.config(default='postgres://pablo:qwe@localhost:5432/myproject')}
+#DATABASES = {'default' : dj_database_url.config() } 
 
 
 #DATABASES['default'] = dj_database_url.config()
