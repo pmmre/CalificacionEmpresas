@@ -1,1 +1,1 @@
-web: gunicorn Empresas.wsgi --log-file -
+web: gunicorn /Empresas/Empresas.wsgi --log-file -
