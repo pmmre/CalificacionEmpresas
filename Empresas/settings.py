@@ -112,7 +112,18 @@ DATABASES = {
     }
 }
 """
-DATABASES = {'default': dj_database_url.config(default='postgres://pablo:qwe@localhost:5432/myproject')}
+ON_HEROKU = os.environ.get('ON_HEROKU')
+
+if ON_HEROKU:
+    DATABASES = {'default': dj_database_url.config(default='postgres://pablo:qwe@localhost:5432/myproject')}
+else:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        }
+    }
+
 #DATABASES = {'default' : dj_database_url.config() } 
 
 
